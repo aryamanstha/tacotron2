@@ -271,8 +271,8 @@ if __name__ == '__main__':
                         required=False, help='rank of current gpu')
     parser.add_argument('--group_name', type=str, default='group_name',
                         required=False, help='Distributed group name')
-    parser.add_argument('--hparams', type=str,
-                        required=False, help='comma separated name=value pairs')
+    parser.add_argument('--hparams', type=str)
+                        # required=False, help='comma separated name=value pairs')
 
     args = parser.parse_args()
     hparams = create_hparams(args.hparams)
