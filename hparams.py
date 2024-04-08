@@ -30,8 +30,8 @@ def create_hparams(hparams_string=None, verbose=False):
         "load_mel_from_disk":True,
         "load_phone_from_disk":True,
 
-        "training_files":'/content/tacotron2/dataset/train.txt',
-        "validation_files":'/content/tacotron2/dataset/validation.txt',
+        "training_files":'/content/tacotron2/filelists/train.txt',
+        "validation_files":'/content/tacotron2/filelists/validation.txt',
 
         "text_cleaners":['english_cleaners'],
 
